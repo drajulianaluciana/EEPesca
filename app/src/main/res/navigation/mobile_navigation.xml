@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/feedFragment">
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="br.com.zee.pesca.FeedFragment"
+        android:label="fragment_feed2"
+        tools:layout="@layout/fragment_feed" >
+        <action
+            android:id="@+id/action_feedFragment_to_mapsFragment2"
+            app:destination="@id/mapsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="br.com.zee.pesca.ContactsFragment"
+        android:label="fragment_contacts"
+        tools:layout="@layout/fragment_contacts" >
+        <action
+            android:id="@+id/action_contactsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="br.com.zee.pesca.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/mapsFragment2"
+        android:name="br.com.zee.pesca.MapsFragment2"
+        android:label="fragment_maps2"
+        tools:layout="@layout/fragment_maps2" >
+        <action
+            android:id="@+id/action_mapsFragment2_to_contactsFragment"
+            app:destination="@id/contactsFragment" />
+    </fragment>
+</navigation>

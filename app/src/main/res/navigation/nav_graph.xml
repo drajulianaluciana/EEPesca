@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="br.com.zee.pesca.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_connectionFragment"
+            app:destination="@id/connectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/connectionFragment"
+        android:name="br.com.zee.pesca.ConnectionFragment"
+        android:label="fragment_connection"
+        tools:layout="@layout/fragment_connection" >
+        <action
+            android:id="@+id/action_connectionFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="br.com.zee.pesca.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_authenticationFragment"
+            app:destination="@id/authenticationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_navigationActivity"
+            app:destination="@id/navigationActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="br.com.zee.pesca.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_navigationActivity"
+            app:destination="@id/navigationActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/authenticationFragment"
+        android:name="br.com.zee.pesca.AuthenticationFragment"
+        android:label="fragment_authentication"
+        tools:layout="@layout/fragment_authentication" >
+        <action
+            android:id="@+id/action_authenticationFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/navigationActivity"
+        android:name="br.com.zee.pesca.NavigationActivity"
+        android:label="NavigationActivity" />
+</navigation>

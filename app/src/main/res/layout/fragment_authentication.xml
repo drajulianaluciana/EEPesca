@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AuthenticationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_problems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="Problemas para entrar?"
+            android:textColor="@color/color_primary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/text_mensage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Insira seu E-mail e enviaremos uma notificação para você voltar a acessar sua conta."
+            android:textColor="@color/blue_light"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/text_authentication"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_problems">
+
+        </TextView>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_authentication"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:shapeAppearance="@style/Rounded"
+            app:boxBackgroundColor="@color/gray_light"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_mensage">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_recover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#757575" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_enviar"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/color_primary"
+            android:paddingStart="30dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="Concluir"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_authentication" />
+
+
+        <View
+            android:id="@+id/barrier1"
+            android:layout_width="120dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_dark"
+            android:focusable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progress_recover"
+            app:layout_constraintVertical_bias="0.082" />
+
+        <View
+            android:id="@+id/barrier2"
+            android:layout_width="120dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/gray_dark"
+            android:focusable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progress_recover"
+            app:layout_constraintVertical_bias="0.075" />
+
+        <TextView
+            android:id="@+id/text_or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="ou"
+            android:textColor="@color/gray_dark"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/barrier2"
+            app:layout_constraintStart_toEndOf="@+id/barrier1"
+            app:layout_constraintTop_toBottomOf="@+id/progress_recover" />
+
+
+        <TextView
+            android:id="@+id/btn_criar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="250dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Criar nova conta"
+            android:textColor="@color/color_primary"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_or"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ProgressBar
+            android:id="@+id/progress_recover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:indeterminateTint="@color/blue_light"
+            android:progressTint="@color/blue_light"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_enviar"
+            tools:visibility="visible" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

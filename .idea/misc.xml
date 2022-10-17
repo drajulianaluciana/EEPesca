@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Juliana/AndroidStudioProjects/Pesca2/Pesca2/app/src/main/res/drawable/ic_maps.xml" value="0.153" />
+        <entry key="..\:/Users/Juliana/AndroidStudioProjects/Pesca2/Pesca2/app/src/main/res/drawable/ic_new_contacts.xml" value="0.153" />
+        <entry key="..\:/Users/Juliana/AndroidStudioProjects/Pesca2/Pesca2/app/src/main/res/layout/fragment_authentication.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Juliana/AndroidStudioProjects/Pesca2/Pesca2/app/src/main/res/layout/fragment_feed.xml" value="0.1675929884566054" />
+        <entry key="..\:/Users/Juliana/AndroidStudioProjects/Pesca2/Pesca2/app/src/main/res/layout/fragment_maps2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Juliana/AndroidStudioProjects/Pesca2/Pesca2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Juliana/AndroidStudioProjects/Pesca2/app/src/main/res/drawable-v24/ic_settings.xml" value="0.153" />
         <entry key="..\:/Users/Juliana/AndroidStudioProjects/Pesca2/app/src/main/res/drawable-v24/rounded.xml" value="0.153" />
         <entry key="..\:/Users/Juliana/AndroidStudioProjects/Pesca2/app/src/main/res/drawable/Gov.br_logo.xml" value="0.153" />
